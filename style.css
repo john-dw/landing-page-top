@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
 
 body {
     display: flex;
     flex-direction: column;
     font-family: Roboto, sans-serif;
+    margin: 0;
 }
 
 p {
@@ -12,6 +13,10 @@ p {
 
 .header {
     background-color: #1F2937;
+    display: flex;
+    padding: 12px 142px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header-logo {
@@ -19,8 +24,37 @@ p {
     font-size: 24px;
 }
 
-.hero {
+ul {
+    display: flex;
+    gap: 24px;
+}
 
+li {
+    list-style: none;
+}
+
+.hero {
+    padding: 78px 142px;
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+
+}
+
+.hero button {
+    padding: 12px 24px;
+    color: #E5E7EB;
+    font-weight: bold;
+    border-radius: 12px;
+    border: none;
+
+}
+
+.left {
+}
+
+.right img {
+    width: 300px;
 }
 
 h1 {
@@ -33,56 +67,118 @@ h2 {
     font-size: 36px;
     color: #1F2937;
     font-weight: bold;
+    text-align: center;
 }
 
 .hero-text,
-.footer {
+.footer,
+ul {
     font-size: 18px;
     color: #E5E7EB;
-}
-
-.left {
-
-}
-
-.right {
-
 }
 
 button {
     background-color: #3882F6;
 }
 
-.cards {
+.section2 {
+    padding-left: 142px;
+    padding-right: 142px;
+    padding-bottom: 78px;
+}
 
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
 }
 
 .card {
+    width: 175px;
+}
 
+.card p {
+    text-align: center;
+}
+
+.card img {
+    width: 175px;
+    border: solid;
+    border-width: 3px;
+    border-radius: 8px;
+    border-color: #3882F6;
 }
 
 .quote-section {
     background-color: #E5E7EB;
+    padding: 92px 142px;
+    justify-items: center;
+}
+
+.quote-author {
+    width: 750px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .quote {
     font-size: 36px;
-    font-weight: lighter;
+    font-style: italic;
+    font-weight: 300;
     color:#1F2937;
+    margin: 0;
 }
 
 .author {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
 
 }
 
 .last-section {
-
+    padding: 78px 142px;
 }
 
 .modal {
+    background-color: #3882F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 40px;
+    gap: 18px;
+}
 
+.cta {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.cta-bold {
+    font-weight: bold;
+    color: #f9faf8;
+    font-size: 24px;
+    border: 0;
+}
+
+.modal .hero-text {
+}
+
+.modal button {
+    color: #f9faf8;
+    font-size: 18px;
+    font-weight: bold;
+    border: solid;
+    border-radius: 6px;
+    border-width: 2px;
+    padding: 4px 20px;
 }
 
 .footer {
     background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
 }
